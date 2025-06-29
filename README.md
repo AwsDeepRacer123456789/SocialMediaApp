@@ -1,47 +1,104 @@
-MongoDB, Express, React, Node Project
+ConnectSpace - MERN Social App
+A fully responsive social media web application built using the MERN stack. This project supports authentication, real-time interaction features like comments, post filtering, pagination, and a modern UI. It was a great opportunity to deepen my understanding of full-stack development and apply best practices for scalable web applications.
 
-A full-stack social media application built with the MERN Stack (MongoDB, Express, React, Node.js). This app includes powerful features like Google Authentication, pagination, post filtering, comments, and responsive design — making it one of the most complete MERN tutorials on YouTube.
+🚀 Key Features
+Create, edit, delete, and like posts
 
-🚀 Features
+Email & Google Sign-In (OAuth 2.0)
 
-✅ Full CRUD for posts
-🔐 Authentication with Email & Google OAuth
-🔍 Search and filtering by title and tags
-💬 Commenting system
-📄 Paginated post feed
-🧠 Recommended posts engine
-📱 Fully responsive UI
-🛠️ Tech Stack
+Filter posts by search keywords or tags
 
-Frontend: React.js, Redux, Material-UI
-Backend: Node.js, Express.js, MongoDB Atlas
-Authentication: JSON Web Token (JWT), Google OAuth
-Deployment: Netlify (Frontend), Render/Heroku (Backend)
-📦 Installation
+View post details with similar recommendations
 
-Clone the repository:
-git clone https://github.com/your-username/mern-social-media.git
-cd mern-social-media
-Install dependencies for both client and server:
+Leave and view comments on individual posts
+
+Paginated post browsing for better performance
+
+Clean, responsive UI with Material-UI
+
+⚙️ Technologies Used
+Frontend
+
+React.js
+
+Redux Toolkit
+
+Material-UI
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB Atlas
+
+JWT Authentication
+
+Google OAuth API
+
+Deployment
+
+Frontend: Netlify
+
+Backend: Render or Railway
+
+🛠 Setup Instructions
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/connectspace.git
+cd connectspace
+Install frontend & backend dependencies
+
+bash
+Copy
+Edit
 cd client
 npm install
 cd ../server
 npm install
-Set up environment variables:
-Create .env in the server folder and add:
+Add environment variables
 
+Create a .env file inside the server/ directory:
+
+env
+Copy
+Edit
 PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+MONGODB_URI=your_mongo_uri
+JWT_SECRET=your_secret
 GOOGLE_CLIENT_ID=your_google_client_id
-Run the application:
-Backend: npm start
-Frontend (in client/): npm start
-Visit: http://localhost:3000
-📁 Folder Structure
+Run locally
 
-.
+Start the backend server: npm start (in server/)
+
+Start the frontend client: npm start (in client/)
+
+App will be running on http://localhost:3000
+
+📁 Project Structure
+bash
+Copy
+Edit
+connectspace/
 ├── client/         # React frontend
-├── server/         # Node.js backend with Express
-├── README.md
-🌐 Live Demo
+├── server/         # Express backend
+└── README.md
+🖼 Preview
+
+📌 Learnings
+This project helped me:
+
+Implement full-stack authentication (JWT + OAuth)
+
+Use Redux effectively for global state
+
+Understand RESTful API design
+
+Improve performance using pagination
+
+Apply Material-UI for responsive design systems
+
